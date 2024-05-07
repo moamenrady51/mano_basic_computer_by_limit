@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/AC_CONTROL.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/AC_Design.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/ADDER_AND_LOGIC_UNIT.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/AR_CONTROL.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/AR_Design.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/ASIGNMENTAT.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/COMMON_BUS_CONTROL.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/DECODER.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/DR_CONTROL.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/DR_Design.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/ENCODER.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/HEAD.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/IR_CONTROL.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/IR_Design.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/MULTIPLEXER.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/PC.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/PC_CONTROL.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/RAM_256_B.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/RAM_CONTROL.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/SEQ_COUNTER.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sources_1/new/SEQ_COUNTER_CLR.v" \
+"../../../../MANOOOOOOOOOOOO.srcs/sim_1/new/HEAD_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
