@@ -34,25 +34,15 @@ module PC_CONTROL(
             input [15:0] AC);
 
 
-    wire In, AC15n, En, a1, a3, r, a6 ,a7 ,a8 ,a9 ,a10 ,o1 ,a11;
-    wire a15, a16;
+    wire ICOM, T4D4, T5D5, r;
     
-    assign In= ~I;
-    assign r= In & D[7] & T[3];
-    assign AC15n = ~AC[15];
-    assign En=~E;
-    
-	assign a1=  T[1];
-	assign a8 = B[3] & AC[15];      
-	assign a9 = AC15n & B[4];       
-	assign a10 = En & B[1];           
-    assign a15 = T[4] & D[4];
-	assign a16 = D[5] & T[5]; 
-    assign o1 = a8 | a9 | a10;
-	assign a11 = r & o1;            
+    assign ICOM= ~I;
+    assign r= ICOM & D[7] & T[3];
+    assign T4D4 = T[4] & D[4];
+	assign T5D5 = D[5] & T[5]; 
 
-	assign LD = a15 | a16;      
-	assign INC = a1 | a11 ; 
+	assign LD = T4D4 | T5D5;      
+	assign INC = T[1] | r ; 
 	assign CLR= r & B[0];  
 
 endmodule

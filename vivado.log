@@ -1,0 +1,486 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May  8 07:55:16 2024
+# Process ID: 8300
+# Current directory: D:/mano_basic_computer_using_verilog_by_limit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5808 D:\mano_basic_computer_using_verilog_by_limit\mano_basic_computer_using_verilog_by_limit.xpr
+# Log file: D:/mano_basic_computer_using_verilog_by_limit/vivado.log
+# Journal file: D:/mano_basic_computer_using_verilog_by_limit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 854.227 ; gain = 122.648
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'HEAD_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj HEAD_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AC_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AC_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AC_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AC_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ADDER_AND_LOGIC_UNIT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADDER_AND_LOGIC_UNIT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AR_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AR_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AR_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AR_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ASIGNMENTAT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ASIGNMENTAT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/COMMON_BUS_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module COMMON_BUS_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/DECODER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DECODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/DR_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DR_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/DR_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DR_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ENCODER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/HEAD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HEAD
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/IR_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/IR_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/MULTIPLEXER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTIPLEXER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/PC_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/RAM_256_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_256_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/RAM_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/SEQ_COUNTER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEQ_COUNTER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/SEQ_COUNTER_CLR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEQ_COUNTER_CLR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sim_1/new/HEAD_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HEAD_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 7ac72585ba2044c69ecd0dc1ecdffe3c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot HEAD_TB_behav xil_defaultlib.HEAD_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 16 for port MUX_IN_0 [D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/HEAD.v:66]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port B [D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ASIGNMENTAT.v:77]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port B [D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ASIGNMENTAT.v:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AC_Design
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.RAM_256_B
+Compiling module xil_defaultlib.AR_Design
+Compiling module xil_defaultlib.DR_Design
+Compiling module xil_defaultlib.ADDER_AND_LOGIC_UNIT
+Compiling module xil_defaultlib.SEQ_COUNTER
+Compiling module xil_defaultlib.DECODER
+Compiling module xil_defaultlib.IR_Design
+Compiling module xil_defaultlib.ENCODER
+Compiling module xil_defaultlib.MULTIPLEXER
+Compiling module xil_defaultlib.AR_CONTROL
+Compiling module xil_defaultlib.PC_CONTROL
+Compiling module xil_defaultlib.DR_CONTROL
+Compiling module xil_defaultlib.AC_CONTROL
+Compiling module xil_defaultlib.IR_CONTROL
+Compiling module xil_defaultlib.RAM_CONTROL
+Compiling module xil_defaultlib.SEQ_COUNTER_CLR
+Compiling module xil_defaultlib.COMMON_BUS_CONTROL
+Compiling module xil_defaultlib.ASIGNMENTAT
+Compiling module xil_defaultlib.HEAD
+Compiling module xil_defaultlib.HEAD_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot HEAD_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "HEAD_TB_behav -key {Behavioral:sim_1:Functional:HEAD_TB} -tclbatch {HEAD_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source HEAD_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'HEAD_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 893.754 ; gain = 24.172
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'HEAD_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj HEAD_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AC_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AC_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AC_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AC_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ADDER_AND_LOGIC_UNIT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADDER_AND_LOGIC_UNIT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AR_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AR_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AR_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AR_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ASIGNMENTAT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ASIGNMENTAT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/COMMON_BUS_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module COMMON_BUS_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/DECODER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DECODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/DR_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DR_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/DR_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DR_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ENCODER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/HEAD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HEAD
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/IR_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/IR_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/MULTIPLEXER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTIPLEXER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/PC_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/RAM_256_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_256_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/RAM_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/SEQ_COUNTER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEQ_COUNTER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/SEQ_COUNTER_CLR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEQ_COUNTER_CLR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sim_1/new/HEAD_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HEAD_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 7ac72585ba2044c69ecd0dc1ecdffe3c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot HEAD_TB_behav xil_defaultlib.HEAD_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 16 for port MUX_IN_0 [D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/HEAD.v:67]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port B [D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ASIGNMENTAT.v:77]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port B [D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ASIGNMENTAT.v:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AC_Design
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.RAM_256_B
+Compiling module xil_defaultlib.AR_Design
+Compiling module xil_defaultlib.DR_Design
+Compiling module xil_defaultlib.ADDER_AND_LOGIC_UNIT
+Compiling module xil_defaultlib.SEQ_COUNTER
+Compiling module xil_defaultlib.DECODER
+Compiling module xil_defaultlib.IR_Design
+Compiling module xil_defaultlib.ENCODER
+Compiling module xil_defaultlib.MULTIPLEXER
+Compiling module xil_defaultlib.AR_CONTROL
+Compiling module xil_defaultlib.PC_CONTROL
+Compiling module xil_defaultlib.DR_CONTROL
+Compiling module xil_defaultlib.AC_CONTROL
+Compiling module xil_defaultlib.IR_CONTROL
+Compiling module xil_defaultlib.RAM_CONTROL
+Compiling module xil_defaultlib.SEQ_COUNTER_CLR
+Compiling module xil_defaultlib.COMMON_BUS_CONTROL
+Compiling module xil_defaultlib.ASIGNMENTAT
+Compiling module xil_defaultlib.HEAD
+Compiling module xil_defaultlib.HEAD_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot HEAD_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "HEAD_TB_behav -key {Behavioral:sim_1:Functional:HEAD_TB} -tclbatch {HEAD_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source HEAD_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'HEAD_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 911.684 ; gain = 4.391
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'HEAD_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj HEAD_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AC_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AC_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AC_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AC_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ADDER_AND_LOGIC_UNIT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADDER_AND_LOGIC_UNIT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AR_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AR_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AR_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AR_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ASIGNMENTAT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ASIGNMENTAT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/COMMON_BUS_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module COMMON_BUS_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/DECODER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DECODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/DR_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DR_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/DR_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DR_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ENCODER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/HEAD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HEAD
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/IR_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/IR_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/MULTIPLEXER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTIPLEXER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/PC_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/RAM_256_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_256_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/RAM_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/SEQ_COUNTER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEQ_COUNTER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/SEQ_COUNTER_CLR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEQ_COUNTER_CLR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sim_1/new/HEAD_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HEAD_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 7ac72585ba2044c69ecd0dc1ecdffe3c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot HEAD_TB_behav xil_defaultlib.HEAD_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 16 for port MUX_IN_0 [D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/HEAD.v:67]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port B [D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ASIGNMENTAT.v:77]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port B [D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ASIGNMENTAT.v:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AC_Design
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.RAM_256_B
+Compiling module xil_defaultlib.AR_Design
+Compiling module xil_defaultlib.DR_Design
+Compiling module xil_defaultlib.ADDER_AND_LOGIC_UNIT
+Compiling module xil_defaultlib.SEQ_COUNTER
+Compiling module xil_defaultlib.DECODER
+Compiling module xil_defaultlib.IR_Design
+Compiling module xil_defaultlib.ENCODER
+Compiling module xil_defaultlib.MULTIPLEXER
+Compiling module xil_defaultlib.AR_CONTROL
+Compiling module xil_defaultlib.PC_CONTROL
+Compiling module xil_defaultlib.DR_CONTROL
+Compiling module xil_defaultlib.AC_CONTROL
+Compiling module xil_defaultlib.IR_CONTROL
+Compiling module xil_defaultlib.RAM_CONTROL
+Compiling module xil_defaultlib.SEQ_COUNTER_CLR
+Compiling module xil_defaultlib.COMMON_BUS_CONTROL
+Compiling module xil_defaultlib.ASIGNMENTAT
+Compiling module xil_defaultlib.HEAD
+Compiling module xil_defaultlib.HEAD_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot HEAD_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "HEAD_TB_behav -key {Behavioral:sim_1:Functional:HEAD_TB} -tclbatch {HEAD_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source HEAD_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'HEAD_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 919.883 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'HEAD_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj HEAD_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AC_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AC_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AC_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AC_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ADDER_AND_LOGIC_UNIT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADDER_AND_LOGIC_UNIT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AR_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AR_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/AR_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AR_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ASIGNMENTAT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ASIGNMENTAT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/COMMON_BUS_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module COMMON_BUS_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/DECODER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DECODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/DR_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DR_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/DR_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DR_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ENCODER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/HEAD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HEAD
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/IR_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/IR_Design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/MULTIPLEXER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTIPLEXER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/PC_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/RAM_256_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_256_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/RAM_CONTROL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_CONTROL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/SEQ_COUNTER.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEQ_COUNTER
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/SEQ_COUNTER_CLR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SEQ_COUNTER_CLR
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sim_1/new/HEAD_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HEAD_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 7ac72585ba2044c69ecd0dc1ecdffe3c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot HEAD_TB_behav xil_defaultlib.HEAD_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 4 differs from formal bit length 16 for port MUX_IN_0 [D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/HEAD.v:76]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port B [D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ASIGNMENTAT.v:77]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port B [D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.srcs/sources_1/new/ASIGNMENTAT.v:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AC_Design
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.RAM_256_B
+Compiling module xil_defaultlib.AR_Design
+Compiling module xil_defaultlib.DR_Design
+Compiling module xil_defaultlib.ADDER_AND_LOGIC_UNIT
+Compiling module xil_defaultlib.SEQ_COUNTER
+Compiling module xil_defaultlib.DECODER
+Compiling module xil_defaultlib.IR_Design
+Compiling module xil_defaultlib.ENCODER
+Compiling module xil_defaultlib.MULTIPLEXER
+Compiling module xil_defaultlib.AR_CONTROL
+Compiling module xil_defaultlib.PC_CONTROL
+Compiling module xil_defaultlib.DR_CONTROL
+Compiling module xil_defaultlib.AC_CONTROL
+Compiling module xil_defaultlib.IR_CONTROL
+Compiling module xil_defaultlib.RAM_CONTROL
+Compiling module xil_defaultlib.SEQ_COUNTER_CLR
+Compiling module xil_defaultlib.COMMON_BUS_CONTROL
+Compiling module xil_defaultlib.ASIGNMENTAT
+Compiling module xil_defaultlib.HEAD
+Compiling module xil_defaultlib.HEAD_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot HEAD_TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/mano_basic_computer_using_verilog_by_limit/mano_basic_computer_using_verilog_by_limit.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "HEAD_TB_behav -key {Behavioral:sim_1:Functional:HEAD_TB} -tclbatch {HEAD_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source HEAD_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'HEAD_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 923.172 ; gain = 3.289
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  8 08:07:07 2024...

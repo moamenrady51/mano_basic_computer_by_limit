@@ -20,22 +20,30 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module MULTIPLEXER(d0,d1,d2,d3,d4,d5,d6,d7,sel,out);
+module MULTIPLEXER(
 
-	input [15:0] d0,d1,d2,d3,d4,d5,d6,d7;
-	input [2:0] sel;
-	output reg [15:0]  out;
+	input [15:0] MUX_IN_0,
+	input [15:0] MUX_IN_1,
+	input [15:0] MUX_IN_2,
+	input [15:0] MUX_IN_3,
+	input [15:0] MUX_IN_4,
+	input [15:0] MUX_IN_5,
+	input [15:0] MUX_IN_6,
+	input [15:0] MUX_IN_7,
+	input [2:0] S2S1S0,
+	output reg [15:0] MUX_OUT
+);
 
 	always @* begin
-		case(sel)
-			3'b000:out=d0;
-			3'b001:out=d1;
-			3'b010:out=d2;
-			3'b011:out=d3;
-			3'b100:out=d4;
-			3'b101:out=d5;
-			3'b110:out=d6;
-			3'b111:out=d7;
+		case(S2S1S0)
+			3'b000:MUX_OUT=MUX_IN_0;
+			3'b001:MUX_OUT=MUX_IN_1;
+			3'b010:MUX_OUT=MUX_IN_2;
+			3'b011:MUX_OUT=MUX_IN_3;
+			3'b100:MUX_OUT=MUX_IN_4;
+			3'b101:MUX_OUT=MUX_IN_5;
+			3'b110:MUX_OUT=MUX_IN_6;
+			3'b111:MUX_OUT=MUX_IN_7;
 		endcase
 	end
 

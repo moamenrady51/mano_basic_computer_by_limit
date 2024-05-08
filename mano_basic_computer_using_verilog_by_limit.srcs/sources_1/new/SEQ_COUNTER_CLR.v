@@ -20,24 +20,26 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module SEQ_COUNTER_CLR(CLR, INR, T, D, I);
+module SEQ_COUNTER_CLR(CLR, INC, T, D, I);
 
 	input [7:0] T, D;
 	input I;
 	
-	output CLR, INR;
+	output CLR, INC;
 	
-	wire a1, a2, a3, a4, a5, o1, o2;
-	wire In = ~I;
-	wire r = D[7] & In & T[3];
+	wire D43, D43T4, D7T3, D0125, D0125T5;
+	wire ICOM = ~I;
+	wire r = D[7] & ICOM & T[3];
 	
-	assign o1 = D[4] | D[3];
-	assign a2 = o1 & T[4];
-	assign a3 = D[7] & T[3];
-	assign o2 = D[2] | D[1] | D[0] | D[5];
-	assign a5 = o2 & T[5];
+	assign D43 = D[4] | D[3];
+	assign D43T4 = D43 & T[4];
+	assign D7T3 = D[7] & T[3];
+	assign D0125 = D[2] | D[1] | D[0] | D[5];
+	assign D0125T5 = D0125 & T[5];
 	
-	assign CLR = 0;
-	assign INR = (~CLR);
+//	assign CLR = D43 | D43T4 | D7T3 | D0125 | D0125T5 ;
+	assign CLR = 0 ;
+
+	assign INC = (~CLR);
 	
 endmodule

@@ -1,24 +1,25 @@
 
 `define	BLE	16'b0
 
- module HEAD(input CLK,
+ module HEAD(
 
-     output wire [15:0] DR,
-     output wire [15:0] AC,
-     output wire [15:0]  IR,
-     output wire [15:0]   MEMORY_OUTPUT,
-     output wire [11:0] PC,
-     output wire [11:0] AR,
-     output wire [7:0] T ,
-     output wire [7:0] D,
-     output wire [2:0] SEQ_COUNTER_OUTPUT,
-     output wire [15:0] Data,
-     output wire [2:0] S2S1S0,
-     output wire [7:0] X ,
-     output wire I,
-     output wire E ,
-     output wire read ,
-      output wire [15:0] ACDATA
+     output wire [15:0]              DR,
+     output wire [15:0]              AC,
+     output wire [15:0]              IR,
+     output wire [11:0]              PC,
+     output wire [11:0]              AR,
+     output wire [15:0]              MEMORY_OUTPUT,
+     output wire [2:0]               SEQ_COUNTER_OUTPUT,
+     output wire [15:0]              SELECTED_OUTPUT,
+     output wire [2:0]               S2S1S0,
+     output wire [7:0]               Xs ,
+     output wire [7:0]               T ,
+     output wire [7:0]               D,
+     output wire                     I,
+     output wire                     E ,
+     output wire                     read ,
+      output wire           [15:0] ALU_OUT,
+      input CLK
      );
      
 	
@@ -26,21 +27,30 @@
 	       
 	       
 	       
-	wire INCAC, LDAC, CLRAC;
-    AC_Design ac_reg (CLRAC ,INCAC, CLK ,ACDATA, AC,  LDAC );	       
+	wire INCAC;
+	wire  LDAC;
+	wire  CLRAC;
+    AC_Design ac_reg (CLRAC ,INCAC, CLK ,ALU_OUT, AC,  LDAC );	       
 
-	wire INCPC, LDPC, CLRPC;                    
-    PC pc_reg(CLRPC , INCPC,CLK, Data[11:0], PC, LDPC); 
+	wire INCPC;
+	wire  LDPC;
+	wire  CLRPC;                    
+    PC pc_reg(CLRPC , INCPC,CLK, SELECTED_OUTPUT[11:0], PC, LDPC); 
     
-    wire WRITE, READ;
-	RAM_256_B ramat (CLK, READ, AR, WRITE, Data, MEMORY_OUTPUT ); 
-	wire   INCAR, LDAR, CLRAR;
+    wire WRITE;
+    wire  READ;
+	RAM_256_B ramat (CLK, READ, AR, WRITE, SELECTED_OUTPUT, MEMORY_OUTPUT ); 
+	wire   INCAR;
+	wire  LDAR;
+	wire  CLRAR;
 	wire clr;                                                                                     
-	AR_Design AR_reg (LDAR, clr ,INCAR, CLK ,Data[11:0], AR );
+	AR_Design AR_reg (LDAR, clr ,INCAR, CLK ,SELECTED_OUTPUT[11:0], AR );
 
-	wire  INCDR, LDDR, CLRDR;
+	wire  INCDR;
+	wire  LDDR;
+	wire CLRDR;
 
-	DR_Design dr_reg( LDDR,CLRDR, INCDR, CLK, Data,DR );                
+	DR_Design dr_reg( LDDR,CLRDR, INCDR, CLK, SELECTED_OUTPUT,DR );                
 		
 
     wire  cout; 
@@ -49,8 +59,8 @@
     assign IFLG = I;
 	wire [15:0] ac_in;
 	wire CIR, CIL, CMA, LDA, INPT, ADD, AND;
-	ADDER_AND_LOGIC_UNIT ALU(AND, ADD, LDA, CMA,CIR, CIL,E ,AC,CLK, DR, cout , ACDATA); 
-	assign ac_in =   ACDATA;  
+	ADDER_AND_LOGIC_UNIT ALU(AND, ADD, LDA, CMA,CIR, CIL,E ,AC,CLK, DR, cout , ALU_OUT); 
+	assign ac_in =   ALU_OUT;  
 	              
 	wire INCSC;
     assign INCSC = ~CLRSC;             
@@ -59,11 +69,11 @@
     DECODER dec(SEQ_COUNTER_OUTPUT, T);
     
 	wire INCIR, LDIR, CLRIR;
-	IR_Design ir_reg( LDIR,CLRIR,INCIR,CLK,   Data,IR  ); 
+	IR_Design ir_reg( LDIR,CLRIR,INCIR,CLK,   SELECTED_OUTPUT,IR  ); 
 	
 	              
-    ENCODER SEL_ENC(S2S1S0,X);	                                        
-    MULTIPLEXER BUS_SELECTION (4'h0000, {4'b0000,AR}, {4'b0000, PC}, DR, AC, IR, 4'h0000, MEMORY_OUTPUT, S2S1S0, Data);  
+    ENCODER SEL_ENC(S2S1S0,Xs);	                                        
+    MULTIPLEXER BUS_SELECTION (4'h0000, {4'b0000,AR}, {4'b0000, PC}, DR, AC, IR, 4'h0000, MEMORY_OUTPUT, S2S1S0, SELECTED_OUTPUT);  
     
     
       ASIGNMENTAT rabt( 
@@ -96,7 +106,7 @@
       .CLRSC(CLRSC),
       .INRSC(INCSC),
       .E(E),
-      .X(X),
+      .Xs(Xs),
       .I(I),
       .D(D),
       .CIR(CIR),

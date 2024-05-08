@@ -29,21 +29,20 @@ Store, READ, T, D, I);
 	input [7:0] T, D;
 	output Store, READ;
 
-	wire Dn7;
-	wire A1, A2, A3, A4, A8, A9,A10,A11;
+	wire D7COM;
+	wire r, D3T4, D5T4, D012, D012T4, D6T4,D6T6;
 
-	assign Dn7 = ~D[7];
+	assign D7COM = ~D[7];
 
-	assign A1 =  T[1];
-	assign A2 = Dn7 & I & T[3];
-	assign A3 = D[3] & T[4];
-	assign A4 = D[5] & T[4];
-	assign A9 = D[2] | D[1] | D[0];
-	assign A8 = A9 & T[4];
-	assign A10= D[6] & T[4] ;
-	assign A11 = D[6] & T[6] ;
+	assign r = D7COM & I & T[3];
+	assign D3T4 = D[3] & T[4];
+	assign D5T4 = D[5] & T[4];
+	assign D012 = D[2] | D[1] | D[0];
+	assign D012T4 = D012 & T[4];
+	assign D6T4= D[6] & T[4] ;
+	assign D6T6 = D[6] & T[6] ;
 	
-	assign Store = A3 | A4  | A11;
-	assign READ = A1 | A8 | A2|A10;
+	assign Store = D3T4 | D5T4  | D6T6;
+	assign READ = T[1] | D012T4 | r  |D6T4;
 
 endmodule

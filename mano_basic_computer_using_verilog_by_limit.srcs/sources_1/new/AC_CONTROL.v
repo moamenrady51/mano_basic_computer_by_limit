@@ -48,6 +48,7 @@ wire r, p;
 assign IFCOM = ~IFLAG ;
 
 assign r = D[7] & IFCOM & T[3];
+assign p = D[7] & IFLAG & T[3];
 
 assign AND = D[0] & T[5];  
 assign ADD = T[5] & D[1];
@@ -58,6 +59,6 @@ assign CIR   = B[7] & r;
 assign INC = B[5] & r;
 assign INP = B[11] & p;
 
-assign LD =( AND | ADD | LDA | CIL | CIR | CMA | INP );  
+assign LD = AND | ADD | LDA | CIL | CIR | CMA | INP ;  
 assign CLR = r & B[11]; 
 endmodule

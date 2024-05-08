@@ -20,12 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module IR_CONTROL(D, T, CLR, INR, LD);
+module IR_CONTROL(input [7:0] D,
+                input [7:0]  T,
+                output  CLR,
+                output  INC,
+                output  LD);
 
-    input [7:0] D, T;
-    output INR, CLR, LD;
+
     
-    assign INR = 0;
+    assign INC = 0;
     assign CLR = 0;
     assign LD = T[1];
 endmodule

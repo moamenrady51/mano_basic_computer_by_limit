@@ -29,10 +29,10 @@ module DR_CONTROL(
 
 
 
-	wire o;
-	assign o= D[0] | D[1] | D[2] ;
+	wire D012;
+	assign D012 = D[0] | D[1] | D[2] ;
 	
-	assign LD = T[4] & o;
+	assign LD = T[4] & D012;
 	assign INC = 0;
 
 endmodule

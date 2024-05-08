@@ -30,14 +30,11 @@ module AR_CONTROL(
 
 
 	
-	wire D7n = ~D[7];
-	wire a1, a2, a3;
-	
-	assign a1 = D7n & I & T[3];
-	assign a2 = T[2] ;
-	assign a3 =  T[0];
+	wire D7COM = ~D[7];
+	wire r, a2, a3;
+	assign r = D7COM & I & T[3];
+	assign LD = r | T[2] | T[0];
 	assign INC = D[5] & T[4];
-	assign LD = a1 | a2 | a3;
-	assign CLR = 0;  //;w;
+
 	
 endmodule

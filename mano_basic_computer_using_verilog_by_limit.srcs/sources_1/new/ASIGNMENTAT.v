@@ -50,7 +50,7 @@ module ASIGNMENTAT
                      output CLRSC,
                      output INRSC,
                      output E,
-                     output [7:0] X,
+                     output [7:0] Xs,
                      output I,
                      input [7:0] D ,
                      output CIR,
@@ -80,6 +80,6 @@ module ASIGNMENTAT
 	IR_CONTROL ir(D, T, CLRIR, INRIR, LoadIR); 
 	RAM_CONTROL ram(WRITE, READ, T, D, I);	
 	SEQ_COUNTER_CLR sc(CLRSC, INRSC, T, D, I);	
-	COMMON_BUS_CONTROL bus(X, D, T, I);   
+	COMMON_BUS_CONTROL bus(Xs, D, T, I);   
 	
 endmodule

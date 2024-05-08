@@ -31,9 +31,9 @@ wire   [11:0]   AR;
 wire [7:0] T;
 wire [7:0] D;
 wire [2:0] SEQ_COUNTER_OUTPUT;
-wire [15:0] Data;
+wire [15:0] SELECTED_OUTPUT;
 wire [2:0] S2S1S0;
-wire [7:0] X;
+wire [7:0] Xs;
 wire I;
 wire E;
 wire read;
@@ -49,9 +49,9 @@ HEAD head(.CLK(CLK),
      .T(T),
      .D(D),
      .SEQ_COUNTER_OUTPUT(SEQ_COUNTER_OUTPUT),
-     .Data(Data),
+     .SELECTED_OUTPUT(SELECTED_OUTPUT),
      .S2S1S0(S2S1S0),
-     .X(X),
+     .Xs(Xs),
      .I(I),
      .E(E),
      .read(read)
